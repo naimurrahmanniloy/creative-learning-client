@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+}
+.half-header{
+    width: 50%;
+}
+.half-header img{
+    width: 100%;
+    height: 700px;
+}
+.form{
+    width: 30%;
+    margin-left: 150px;
+    margin-top:150px
+   
+}

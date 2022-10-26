@@ -1,9 +1,20 @@
 import React from 'react';
+import Forms from '../Forms/Forms';
+import img from '../../image/2.jpg'
+import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <h1>This is header and this is a head section also</h1>
+        <div className='header'>
+            <div className='half-header'>
+                <img className='header-img' src={img}></img>
+            </div>
+
+            <div className='form '>
+                <h1 className='mb-5'>Please LogIn</h1>
+                <Forms></Forms>
+            </div>
+
         </div>
     );
 };
