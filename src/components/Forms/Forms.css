@@ -1,4 +1,17 @@
 .form-side{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding: 40px;
+    border-radius: 10px;
+}
+.login-btn{
+    background-color: blue;
+    color: white;
+    padding: 9px 80px;
+    border:none;
+    border-radius: 8px;
+
+}
+.login-btn:hover{
+    background-color: darkblue;
+    transition: 1s ease;
 }

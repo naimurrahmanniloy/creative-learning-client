@@ -3,6 +3,8 @@ import Blog from "../components/Blog/Blog";
 import Courses from "../components/Courses/Courses";
 import FAQ from "../components/FAQ/FAQ";
 import Header from "../components/Header/Header";
+import TermsAndCondition from "../components/others/TermsAndCondition/TermsAndCondition";
+import Register from "../components/Register/Register";
 import Main from "../layout/Main";
 
 export const routes = createBrowserRouter([
@@ -25,6 +27,13 @@ export const routes = createBrowserRouter([
             {
                 path: '/faq',
                 element: <FAQ></FAQ>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            }, {
+                path: '/terms',
+                element: <TermsAndCondition></TermsAndCondition>
             }
 
         ]

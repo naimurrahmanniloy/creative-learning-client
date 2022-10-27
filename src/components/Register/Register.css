@@ -1,0 +1,12 @@
+.register{
+        width: 60%;
+        margin-left: 300px;
+        background-color: turquoise;
+        margin-top: 50px;
+        padding: 30px;
+        border-radius: 10px;
+}
+.register-form{
+    width: 70%;
+    margin-left: 140px;
+}
