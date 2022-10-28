@@ -1,0 +1,24 @@
+.cards{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.link{
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    height: 400px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.all-things{
+    display: flex;
+}

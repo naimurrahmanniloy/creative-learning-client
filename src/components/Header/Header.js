@@ -11,7 +11,7 @@ const Header = () => {
             </div>
 
             <div className='form '>
-                <h1 className='mb-2'>Please LogIn</h1>
+                <h1 className='mb-2'>LogIn</h1>
                 <Forms></Forms>
             </div>
 

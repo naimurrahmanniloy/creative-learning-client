@@ -9,9 +9,9 @@ import './Register.css'
 
 const Register = () => {
     const [error, setError] = useState('');
-    const [accepted, setAccepted] = useState(false)
 
-    const { createUser } = useContext(AuthContext)
+
+    const { createUser, updateUserProfile } = useContext(AuthContext)
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
@@ -27,13 +27,23 @@ const Register = () => {
                 const user = result.user;
                 console.log('successful');
                 form.reset();
-                setError('')
+                setError('');
+                handleUpdateUserProfile(name, photoURL)
             })
             .catch(error => {
                 setError(error.message)
             })
 
+        const handleUpdateUserProfile = (name, photoURL) => {
+            const profile = {
+                displayName: name,
+                photoURL: photoURL
+            }
+            updateUserProfile(profile)
+                .then(() => { })
+                .catch(error => console.error(error))
 
+        }
 
     }
     const handleAccepted = event => {
