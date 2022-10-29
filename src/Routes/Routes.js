@@ -25,7 +25,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/courses/:id',
-                loader: ({ params }) => fetch(`https://creative-learning-server-naimurrahmanniloy.vercel.app/${params.id}`),
+                loader: ({ params }) => fetch(`https://creative-learning-server-naimurrahmanniloy.vercel.app/courses/${params.id}`),
                 element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>
             },
             {
