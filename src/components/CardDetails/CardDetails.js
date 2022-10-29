@@ -12,7 +12,9 @@ const CardDetails = () => {
     console.log(courses);
 
     const { user } = useContext(AuthContext);
-
+    const handleProceedBtn = () => {
+        alert('Thanks For The Subscription')
+    }
     return (
         <div className='card-details'>
 
@@ -24,7 +26,7 @@ const CardDetails = () => {
                     <Card.Text>
                         {courses.details}
                     </Card.Text>
-                    <Button variant="primary">Proceed To Buy</Button>
+                    <Button onClick={handleProceedBtn} variant="primary">Proceed To Buy</Button>
                 </Card.Body>
 
             </Card>
