@@ -5,7 +5,7 @@ import CourseCard from '../CourseCard/CourseCard';
 import './Courses.css'
 
 const Courses = () => {
-    const courses = useLoaderData()
+    const courses = useLoaderData();
     console.log(courses)
     return (
         <div>

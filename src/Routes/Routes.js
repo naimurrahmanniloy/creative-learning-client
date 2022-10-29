@@ -20,7 +20,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/courses',
-                loader: () => fetch(`https://creative-learning-server-naimurrahmanniloy.vercel.app`),
+                loader: () => fetch(`https://creative-learning-server-naimurrahmanniloy.vercel.app/courses`),
                 element: <Courses></Courses>,
             },
             {
